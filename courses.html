@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses | Twist Academy Nepalgunj</title>
+  <meta name="description" content="View our training curricula for Barista, Bartending, Bakery, Sushi, and Pizza courses in Nepalgunj. Gain practical qualifications at Twist Academy.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .course-detail-section {
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .course-detail-section:last-child {
+      border-bottom: none;
+    }
+    .course-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .course-curriculum {
+      background-color: var(--bg-light);
+      padding: 2rem;
+      border-radius: 16px;
+      margin-top: 1.5rem;
+    }
+    .curriculum-list {
+      list-style-type: none;
+    }
+    .curriculum-item {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+    .curriculum-item::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .course-badge-list {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .course-detail-badge {
+      background-color: rgba(12, 25, 112, 0.05);
+      color: var(--secondary);
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .course-detail-img {
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      .course-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .course-detail-img {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="TWIST Academy Logo" style="height: 48px; width: auto; object-fit: contain;">
+      </a>
+
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-separator">·</li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-separator">·</li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link dropdown-toggle active">
+              Courses
+              <svg class="dropdown-icon" viewBox="0 0 20 20">
+                <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="courses.html#barista">Barista & Brew School</a></li>
+              <li class="dropdown-item"><a href="courses.html#bartending">Bar Academy (Bartending)</a></li>
+              <li class="dropdown-item"><a href="courses.html#bakery">Bakery & Pastry Class</a></li>
+              <li class="dropdown-item"><a href="courses.html#sushi">Sushi Making Class</a></li>
+              <li class="dropdown-item"><a href="courses.html#pizza">Pizza & Burger</a></li>
+            </ul>
+          </li>
+          <li class="nav-separator">·</li>
+          <li class="nav-item"><a href="about.html#placement" class="nav-link">Placement</a></li>
+          <li class="nav-separator">·</li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-separator">·</li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/9779802501801" target="_blank" rel="noopener noreferrer" class="nav-cta">Connect With Us</a>
+    </div>
+  </header>
+
+  <!-- Courses Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="section-subtitle">Our Curriculum</span>
+      <h1 class="section-title">Professional Certification Courses</h1>
+      <p class="hero-desc" style="margin: 1.5rem auto 0 auto; max-width: 700px;">
+        Designed to meet international hospitality standards, our training courses focus entirely on actual skill building, coffee recipe crafting, pastry preparation, and mixology structures.
+      </p>
+    </div>
+  </section>
+
+  <!-- Barista Section -->
+  <section class="section course-detail-section" id="barista">
+    <div class="container course-detail-grid">
+      <div>
+        <span class="section-subtitle">Specialized Academy</span>
+        <h2 class="mb-3">Barista & Brew School</h2>
+        <div class="course-badge-list">
+          <span class="course-detail-badge">Level: Beginner to Pro</span>
+        </div>
+        <p class="mb-3" style="color: var(--text-muted);">
+          Our Barista training takes you through the entire bean-to-cup journey. Students practice dial-in calibrations on modern high-end grinders to adjust grind profile sizes, pull espresso at exact extraction ratios, and texture micro-foam milk for premium design latte art (hearts, rosettas, tulips).
+        </p>
+        <div class="course-curriculum">
+          <h4 class="mb-2">What you will learn:</h4>
+          <ul class="curriculum-list">
+            <li class="curriculum-item">Espresso calibration, dosing, and tamp methods.</li>
+            <li class="curriculum-item">Milk texturing chemistry (micro-foam vs. dry foam).</li>
+            <li class="curriculum-item">Pouring techniques for basic and advanced latte art.</li>
+            <li class="curriculum-item">Manual filter methods (V60, Aeropress, Chemex).</li>
+            <li class="curriculum-item">Cafe machine cleaning, safety, and inventory setup.</li>
+          </ul>
+        </div>
+        <div class="hero-ctas" style="margin-top: 2rem;">
+          <a href="contact.html?course=barista" class="btn btn-primary">Enroll in This Class</a>
+        </div>
+      </div>
+      <div>
+        <img class="course-detail-img" src="assets/images/course-barista.jpg" alt="Student calibrating espresso extraction">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bartending Section -->
+  <section class="section course-detail-section" id="bartending">
+    <div class="container course-detail-grid">
+      <div style="order: 2;">
+        <span class="section-subtitle">Mixology Academy</span>
+        <h2 class="mb-3">Bar Academy (Flair & Bartending)</h2>
+        <div class="course-badge-list">
+          <span class="course-detail-badge">Level: Professional Certification</span>
+        </div>
+        <p class="mb-3" style="color: var(--text-muted);">
+          Master the physics and theater of professional beverage service. This curriculum focuses on classic mixology blueprints (sours, fizzes, highballs), flavor-balancing mocktail creations, fast multi-order cocktail build setups, and flair showmanship (working flair with bottles, tins, and shaker catches).
+        </p>
+        <div class="course-curriculum">
+          <h4 class="mb-2">What you will learn:</h4>
+          <ul class="curriculum-list">
+            <li class="curriculum-item">Bar layout, tools, speed pouring, and measures.</li>
+            <li class="curriculum-item">Cocktail category blueprints and balancing math.</li>
+            <li class="curriculum-item">Working flair and exhibition flair techniques.</li>
+            <li class="curriculum-item">Molecular mixology (dry ice, smoke bubbles, foams).</li>
+            <li class="curriculum-item">Licensing, alcohol guidelines, and customer relations.</li>
+          </ul>
+        </div>
+        <div class="hero-ctas" style="margin-top: 2rem;">
+          <a href="contact.html?course=bartending" class="btn btn-primary">Enroll in This Class</a>
+        </div>
+      </div>
+      <div style="order: 1;">
+        <img class="course-detail-img" src="assets/images/course-bartender.jpg" alt="Bartender executing flair trick">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bakery Section -->
+  <section class="section course-detail-section" id="bakery">
+    <div class="container course-detail-grid">
+      <div>
+        <span class="section-subtitle">Gastronomy Program</span>
+        <h2 class="mb-3">Bakery & Pastry Arts Class</h2>
+        <div class="course-badge-list">
+          <span class="course-detail-badge">Level: Foundation to Intermediate</span>
+        </div>
+        <p class="mb-3" style="color: var(--text-muted);">
+          Delve into the chemistry of baking. Students work with planetary mixers and deck ovens to master yeast fermentation, dough laminations for croissants and danishes, baking sponge cakes, preparing chocolate glazes, and practicing piping designs for decorative icing cakes.
+        </p>
+        <div class="course-curriculum">
+          <h4 class="mb-2">What you will learn:</h4>
+          <ul class="curriculum-list">
+            <li class="curriculum-item">Yeast microbiology and bread fermentation science.</li>
+            <li class="curriculum-item">Lamination logic for croissants and puff pastries.</li>
+            <li class="curriculum-item">Sponge cake baking, leveling, and assembly.</li>
+            <li class="curriculum-item">Fondant work, royal icing, and buttercream piping.</li>
+            <li class="curriculum-item">Commercial kitchen scaling, ovens, and sanitation.</li>
+          </ul>
+        </div>
+        <div class="hero-ctas" style="margin-top: 2rem;">
+          <a href="contact.html?course=bakery" class="btn btn-primary">Enroll in This Class</a>
+        </div>
+      </div>
+      <div>
+        <img class="course-detail-img" src="assets/images/course-bakery.jpg" alt="Students preparing fresh croissants">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sushi Section -->
+  <section class="section course-detail-section" id="sushi">
+    <div class="container course-detail-grid">
+      <div style="order: 2;">
+        <span class="section-subtitle">Specialty masterclass</span>
+        <h2 class="mb-3">Specialty Sushi Class</h2>
+        <div class="course-badge-list">
+          <span class="course-detail-badge">Level: Masterclass</span>
+        </div>
+        <p class="mb-3" style="color: var(--text-muted);">
+          A focused culinary course dedicated to the traditional Japanese art of sushi making. Master the cooking and vinegar-seasoning profile of sushi rice, practice precise knife angles for slicing fresh seafood, roll Hosomaki, Futomaki, and inside-out Uramaki, and style elegant plating structures.
+        </p>
+        <div class="course-curriculum">
+          <h4 class="mb-2">What you will learn:</h4>
+          <ul class="curriculum-list">
+            <li class="curriculum-item">Rice selection, rinsing, cooking, and hangiri seasoning.</li>
+            <li class="curriculum-item">Sushi rolling mats (makisu) control and seaweed (nori) prep.</li>
+            <li class="curriculum-item">Rolling Uramaki (California) and Futomaki profiles.</li>
+            <li class="curriculum-item">Sashimi and Nigiri slicing methods.</li>
+            <li class="curriculum-item">Plating presentations, soy, ginger, and wasabi balance.</li>
+          </ul>
+        </div>
+        <div class="hero-ctas" style="margin-top: 2rem;">
+          <a href="contact.html?course=sushi" class="btn btn-primary">Enroll in This Class</a>
+        </div>
+      </div>
+      <div style="order: 1;">
+        <img class="course-detail-img" src="assets/images/course-sushi.jpg" alt="Plated sushi rolls prepared by a chef">
+      </div>
+    </div>
+  </section>
+
+  <!-- Pizza Section -->
+  <section class="section course-detail-section" id="pizza">
+    <div class="container course-detail-grid">
+      <div>
+        <span class="section-subtitle">Culinary Masterclass</span>
+        <h2 class="mb-3">Pizza & Burger Class</h2>
+        <div class="course-badge-list">
+          <span class="course-detail-badge">Level: Intermediate Masterclass</span>
+        </div>
+        <p class="mb-3" style="color: var(--text-muted);">
+          Learn the principles of Italian flour-water fermentation. Students explore dough hydration formulas, Neapolitan dough stretching (slap and stretch), woodfired temperature management, creating robust marinara sauces, and rolling out artisan fresh pasta sheets.
+        </p>
+        <div class="course-curriculum">
+          <h4 class="mb-2">What you will learn:</h4>
+          <ul class="curriculum-list">
+            <li class="curriculum-item">Flour profiling (Tipo 00 vs Semolina) and hydration math.</li>
+            <li class="curriculum-item">Hand-stretching pizza dough (no rolling pins).</li>
+            <li class="curriculum-item">Woodfire oven fire management (400°C+ baking).</li>
+            <li class="curriculum-item">San Marzano tomato sauce recipes and cheese pairings.</li>
+            <li class="curriculum-item">Artisan pasta making (Fettuccine, Ravioli) from scratch.</li>
+          </ul>
+        </div>
+        <div class="hero-ctas" style="margin-top: 2rem;">
+          <a href="contact.html?course=pizza" class="btn btn-primary">Enroll in This Class</a>
+        </div>
+      </div>
+      <div>
+        <img class="course-detail-img" src="assets/images/course-pizza.jpg" alt="Student preparing fresh pizza in Twist Academy training class">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo" style="margin-bottom: 1.5rem;">
+          <img src="assets/images/logo-dark.png" alt="TWIST Academy Logo" style="height: 54px; width: auto; object-fit: contain;">
+        </div>
+        <p class="footer-desc">Empowering the youth of Mid-Western Nepal with standard practical certifications for international careers in hospitality and gastronomy.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/tbanepalgunj/" target="_blank" rel="noopener noreferrer" class="social-icon">Fb</a>
+          <a href="https://www.instagram.com/twist_nepalgunj/" target="_blank" rel="noopener noreferrer" class="social-icon">In</a>
+          <a href="https://www.tiktok.com/@twist_nepalgunj" target="_blank" rel="noopener noreferrer" class="social-icon">Tk</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Our Programs</h4>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="courses.html#barista">Barista & Brew School</a></li>
+          <li class="footer-link-item"><a href="courses.html#bartending">Bar Academy</a></li>
+          <li class="footer-link-item"><a href="courses.html#bakery">Bakery & Pastry</a></li>
+          <li class="footer-link-item"><a href="courses.html#sushi">Sushi Making Class</a></li>
+          <li class="footer-link-item"><a href="courses.html#pizza">Pizza & Burger</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="about.html">About Us</a></li>
+          <li class="footer-link-item"><a href="gallery.html">Photo Gallery</a></li>
+          <li class="footer-link-item"><a href="about.html#placement">Placement Partners</a></li>
+          <li class="footer-link-item"><a href="contact.html">Inquiry Form</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4 class="footer-title">Newsletter</h4>
+        <p>Subscribe to receive news, class start dates, and recipe tips.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input class="newsletter-input" type="email" placeholder="Your Email Address" required>
+          <button class="newsletter-btn" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Twist Academy, Nepalgunj. All Rights Reserved. Developed By: <a href="https://www.facebook.com/trendmarg.np" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">Trendmarg</a>, Developer: <a href="https://subaashchhetri.com.np" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">Subaash Chhetri</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
